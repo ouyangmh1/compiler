@@ -242,7 +242,7 @@ void yyerror (char* s) {
 
 int main(int argc, char** argv) {
 	yyin = fopen(argv[3], "r");
-	fout = fopen(argv[4], "w");
+	fout = fopen(argv[5], "w");
 
 	yyparse();
 	pushdown(root);
